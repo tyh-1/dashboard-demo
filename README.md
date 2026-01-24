@@ -1,3 +1,4 @@
-> **Demo Version** (No database connection)
+> **🚀 Live Demo**: [View Dashboard on Streamlit Cloud](https://dashboard-demo-wpcvww4ifdmzzpdctuwiql.streamlit.app/)
 >
-> This version uses static data for visualization. For the full Supabase-integrated project, please see the [original repo](https://github.com/tyh-1/spotify-dashboard).
+> **Note**: This is a static demo version without a database connection.  
+> For the full Supabase-integrated project, please see the [original repository](https://github.com/tyh-1/spotify-dashboard).
