@@ -22,9 +22,9 @@ st.markdown(f"時間區間: {start_date} ~ {end_date}")
 
 with st.sidebar:
     st.info("demo 用，所以名稱 (e.g., 歌名) 都做了去識別化")
-    prop = st.sidebar.slider("完成度門檻", min_value=0.0, max_value=1.0, value=1.0, step=0.05, format="%.2f", 
+    prop = st.sidebar.slider("完成度門檻 [完成專輯]", min_value=0.0, max_value=1.0, value=1.0, step=0.05, format="%.2f", 
                              help="計算為已完成專輯所需的最低播放曲目比例")
-    prop2 = st.sidebar.slider("完成度門檻", min_value=0.0, max_value=1.0, value=1.0, step=0.05, format="%.2f")
+    prop2 = st.sidebar.slider("完成度門檻 [馬拉松聆聽]", min_value=0.0, max_value=1.0, value=1.0, step=0.05, format="%.2f")
 
 if start_date is None or end_date is None:
     st.info("⚠️ 請先去 Home page 選擇日期範圍")

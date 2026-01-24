@@ -314,7 +314,7 @@ with col3:
     # Filter
     df_long_raw = pd.read_parquet("./data/page4/df_long.parquet")
     top_sec3_threshold = df['count'].quantile(top_sec3, interpolation='lower')
-    df_long = df_long_raw.loc[df_long_raw['count']>top_sec3_threshold, :]
+    df_long = df_long_raw.loc[df_long_raw['count']>=top_sec3_threshold, :]
     df_long_filtered = filter_by_long_days(df_long, long_days)
     df_long_sorted = df_long_filtered.sort_values('added_at').reset_index(drop=True)
 
