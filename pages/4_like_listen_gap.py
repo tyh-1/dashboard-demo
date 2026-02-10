@@ -87,7 +87,7 @@ with st.sidebar:
     with col2:
         analysis_end = st.date_input(
             "結束",
-            value = pd.to_datetime(pd.Timestamp.now()) - pd.Timedelta(days=5),
+            value = pd.to_datetime(end_date) - pd.Timedelta(days=5),
             min_value = pd.to_datetime(start_date),
             max_value = pd.to_datetime(end_date)
         )
